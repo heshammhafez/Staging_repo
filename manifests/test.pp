@@ -1,7 +1,7 @@
 package { 'ntp': ensure => installed }
 file { 'ntp.conf':
 path => '/etc/ntp.conf',
-mode => '0640',
+mode => '0641',
 content => '
 driftfile /var/lib/ntp/ntp.drift
 statistics loopstats peerstats clockstats
